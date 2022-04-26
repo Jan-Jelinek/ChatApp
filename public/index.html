@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SENG 513 - A2</title>
+  </head>
+
+  <body>
+    <div class="login-border-wrap">
+      <div class="login-window">
+        <form class="login-form" id="login-form">
+          <h2>Welcome</h2>
+          <label for="email">
+            <strong>Choose a username</strong>
+          </label>
+          <input type="text" id="username" placeholder="username">
+          <label for="psw">
+            <strong>Choose a color</strong>
+          </label>
+          <input type="text" id="color" placeholder="Enter a hex value">
+          <button>Log in</button>
+          <label id="error-label"></label>
+        </form>
+      </div>
+    </div>
+    <main>  
+      <div class="chat-app">
+        <ul class="messages" id="messages"></ul>
+        <form class="chat-input" id="send-message-form" action="">
+          <input class="input-box" id="message-input" autocomplete="off"/><button id="send-btn">Send</button>
+        </form>          
+      </div>
+      <div class="peers-border-wrap">
+        <div class="peers-list">
+          <h3>Online</h3>
+          <ul id="peers"></ul>
+        </div>  
+      </div>
+    </main>
+    <label id="colortest"></label>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>

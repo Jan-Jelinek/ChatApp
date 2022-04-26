@@ -1,0 +1,211 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(purple), to(darkblue));
+  background: linear-gradient(to bottom, red, purple, darkblue);
+}
+
+main {
+  margin: auto;
+  width: 100%;
+  max-width: 64rem;
+  height: 100vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.chat-app {
+  width: 65%;
+}
+
+.chat-app .messages {
+  overflow: auto;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3rem;
+  background: white;
+}
+
+.chat-app .messages li {
+  padding: 0.5rem 1rem;
+  overflow: visible;
+}
+
+.chat-app .messages li:nth-child(odd) {
+  background: #efefef;
+}
+
+.chat-app .chat-input {
+  width: 65%;
+  max-width: 41.6rem;
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  height: 3rem;
+  padding: 0.25rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ffcccc), color-stop(#e6ccff), to(#cce6ff));
+  background: linear-gradient(to bottom right, #ffcccc, #e6ccff, #cce6ff);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat-app .chat-input button {
+  background: white;
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  outline: none;
+  color: #333;
+}
+
+.chat-app .chat-input .input-box {
+  border: none;
+  padding: 0 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+
+.chat-app .chat-input .input-box:focus {
+  outline: none;
+}
+
+.peers-border-wrap {
+  width: 35%;
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(blue));
+  background: linear-gradient(to bottom, purple, blue);
+}
+
+.peers-list {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+  background-color: white;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.peers-list label {
+  text-align: center;
+  margin: auto;
+}
+
+.peers-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.peers-list li {
+  margin: 4px;
+}
+
+.login-border-wrap {
+  display: block;
+  position: fixed;
+  z-index: 2;
+  width: 358px;
+  height: 358px;
+  top: calc(50% - 179px);
+  left: calc(50% - 179px);
+  background: -webkit-gradient(linear, left top, right bottom, from(red), color-stop(purple), to(blue));
+  background: linear-gradient(to bottom right, red, purple, blue);
+  padding: 1rem;
+}
+
+.login-window {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  width: 350px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+  text-align: center;
+  background-color: white;
+}
+
+.login-form {
+  max-width: 100%;
+  margin: 24px;
+  background-color: #fff;
+}
+
+.login-form button {
+  padding: 12px 20px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffcccc), color-stop(#e6ccff), to(#cce6ff));
+  background-image: linear-gradient(to bottom right, #ffcccc, #e6ccff, #cce6ff);
+  color: #333;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.login-form button:hover {
+  opacity: 0.6;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: 2px solid #333;
+  background: white;
+}
+
+.login-form input:focus {
+  -webkit-box-shadow: 0 0 5px blue;
+          box-shadow: 0 0 5px blue;
+}
+
+.message-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.message-header .timestamp {
+  color: darkgray;
+}
+
+.server-message {
+  padding: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#error-label {
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */
