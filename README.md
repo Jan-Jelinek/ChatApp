@@ -1,10 +1,9 @@
-Jan Jelinek 30075855
-SENG 513 A2
+Made for SENG 513 A2
 
 Code adapted from: 
 https://socket.io/get-started/chat
 
-To set up, you may need to run the commands:
+To set up, run the commands:
 npm install express
 npm install socket.io
 
