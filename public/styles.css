@@ -11,8 +11,8 @@ html, body {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(purple), to(darkblue));
-  background: linear-gradient(to bottom, red, purple, darkblue);
+  background: -webkit-gradient(linear, left top, right bottom, from(red), color-stop(purple), to(darkblue));
+  background: linear-gradient(to bottom right, red, purple, darkblue);
 }
 
 main {
@@ -97,8 +97,8 @@ main {
 
 .peers-border-wrap {
   width: 35%;
-  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(blue));
-  background: linear-gradient(to bottom, purple, blue);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff0ff), to(#dedeff));
+  background: linear-gradient(to bottom, #fff0ff, #dedeff);
 }
 
 .peers-list {

@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to bottom, red, purple, darkblue);
+    background: linear-gradient(to bottom right, red, purple, darkblue);
 }
 
 main {
@@ -81,7 +81,7 @@ main {
 
 .peers-border-wrap {
     width: 35%;
-    background: linear-gradient(to bottom, purple, blue);
+    background: linear-gradient(to bottom, rgb(255, 240, 255), rgb(222, 222, 255));
 
 }
 
